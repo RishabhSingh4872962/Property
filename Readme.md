@@ -57,29 +57,21 @@ Open constants/url.ts and set the server address:
 
 ✅ Emulator (Android/iOS):
 Use localhost:
-
-ts
-
-
 export const serverAPI = "http://localhost:3000";
+
 ✅ Note: On Android emulators, use http://10.0.2.2:3000 instead of localhost.
 
 📱 Physical Device:
 Make sure your phone and PC are on the same Wi-Fi.
 
 Find your local IP address:
-
-
-
-
 # Windows
 ipconfig
 
 # macOS/Linux
 ifconfig
 Find the IPv4 Address (e.g., 192.168.0.158), then update the file:
-
-ts
+url.ts
 
 
 export const serverAPI = "http://192.168.0.158:3000";
