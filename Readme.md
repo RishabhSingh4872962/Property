@@ -78,6 +78,8 @@ export const serverAPI = "http://192.168.0.158:3000";
 📱 Running the App
 
 
+LOOM VIDEO:
+https://www.loom.com/share/246fd5aa93c7441eb2bcf240c7ba2ae9
 
 yarn start       # or npm run start
 Use Expo Go to scan the QR code for physical devices.
