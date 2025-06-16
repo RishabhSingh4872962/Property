@@ -1,4 +1,4 @@
-const LOCAL_DEV_IP = "localhost";
+const LOCAL_DEV_IP = "192.168.193.193";
 
 
 // ################################

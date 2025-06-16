@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useMutation, useQuery } from "@tanstack/react-query";
-import { serverAPi } from "@/constants/Url";
+import { serverAPI } from "@/constants/Url";
 import { Booking } from "@/types/booking.types";
 
 export const useBookings = () => {
@@ -16,7 +16,7 @@ export const useBookings = () => {
       checkIn: string;
       checkOut: string;
     }) => {
-      return axios.post(`${serverAPi}/bookings`, {
+      return axios.post(`${serverAPI}/bookings`, {
         propertyId,
         userId,
         checkIn: checkIn ?? new Date().toISOString().split("T")[0],
@@ -42,7 +42,7 @@ export const getBookings = (userId: string | null) => {
     enabled: !!userId,
     queryFn: async () => {
       const { data } = await axios.get(
-        `${serverAPi}/bookings?userId=${userId}`
+        `${serverAPI}/bookings?userId=${userId}`
       );
       return data;
     },
