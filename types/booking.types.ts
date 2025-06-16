@@ -4,5 +4,5 @@ export interface Booking {
   userId: string;
   checkIn: string;
   checkOut: string;
-  status: "Confirmed" | "Pending";
+  status: "confirmed" | "Pending";
 }
